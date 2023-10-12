@@ -224,25 +224,25 @@ app.get('/api/v1/devcamp/users/:id' ,
 })
 
           
-//Actualizarlos reviews
-app.put('/api/v1/devcamp/reviews/:id' ,
+//Actualizarlos users
+app.put('/api/v1/devcamp/users/:id' ,
 (request , response)=> {
    response
           .status(200)
           .json({
               "success": true, 
-              "msg" : `Actualizar reviews con id ${request.params.id}`
+              "msg" : `Actualizar users con id ${request.params.id}`
           })
 })
 
-//Eliminar reviews
-app.delete('/api/v1/devcamp/reviews/:id' ,
+//Eliminar users
+app.delete('/api/v1/devcamp/users/:id' ,
 (request , response)=> {
    response
           .status(200)
           .json({
               "success": true, 
-              "msg" : `Eliminando reviews con id ${request.params.id}`
+              "msg" : `Eliminando users con id ${request.params.id}`
           })
 })
 
